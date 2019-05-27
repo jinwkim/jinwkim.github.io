@@ -1,5 +1,5 @@
-# JohnDoe
-A Responsive Free One Page Portfolio Website template
+# Jin Kim
+A personal website for Jin Kim.
 
 
 
