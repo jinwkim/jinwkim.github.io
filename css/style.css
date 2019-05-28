@@ -929,7 +929,7 @@ ul.social-buttons li:last-child {
 	text-align:center;
 }
 .social-btn:hover,.social-btn:focus {
-	background: rgba(255, 232, 0, 1);
+	background: #fff;
 	color: #2679ff;
 }
 .social {
