@@ -39,13 +39,14 @@ a:hover,a:focus,a:active {
 	outline:none!important;
 }
 p {
-	color:#8c9398;
+	color:#5c6266;
 	word-spacing:1px;
 	line-height:25px;
-	font-size:14px;
+	font-size:16px;
+	font-weight: bold;
 }
 h2 {
-	font-size:15px;
+	font-size:18px;
 	color:#353535!important;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -58,8 +59,8 @@ h2::after {
 	margin:20px auto;
 }
 h6 {
-	font-size:15px;
-	color:#8c8c8c;
+	font-size:16px;
+	color:#5c6266;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -191,7 +192,7 @@ sub {
 	bottom:-0.25em;
 }
 p {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight:100;
 	line-height: 28px!important;
 }
