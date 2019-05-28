@@ -993,6 +993,7 @@ ul.social-buttons li:last-child {
 }
 .contact textarea.form-control {
 	height: 310px;
+	text-align:center;
 }
 
 /* Inputs styles */
