@@ -25,7 +25,7 @@
 	Global Styles
 ========================================================================== */
 a {
-	color: #E04343;
+	color: #2679ff;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
@@ -580,8 +580,8 @@ h1.arrow span {
 }
 .color-bg {
 	background: #2679ff;
-	/*#87b5ff;*/
-	/*#E04343;*/
+	/*#87b5ff; baby blue */
+	/*#E04343; red */
 }
 
 .color-bg a {
