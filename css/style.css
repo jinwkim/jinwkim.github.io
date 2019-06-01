@@ -573,11 +573,12 @@ h1.arrow span {
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
-	height:400px;
+	height:500px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
+	background-position: center;
 }
 .color-bg {
 	background: #2679ff;
