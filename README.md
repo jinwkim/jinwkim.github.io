@@ -85,16 +85,16 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 * Use the "class" attribute to define equal styles for elements with the same class name
 * Apply with JavaScript to perform a function against all elements within a specific class
 * Example - script> within body>
-	'''html
-	<script>
-	function myFunction() {
-	  var x = document.getElementsByClassName("city");
-	  for (var i = 0; i  x.length; i++) {
-	    x[i].style.display = "none";
-	  }
-	}
-	</script>
-	'''
+	* script>
+	* function myFunction() {
+	*  var x = document.getElementsByClassName("city");
+	*  for (var i = 0; i  x.length; i++) {
+	*    x[i].style.display = "none";
+	*  }
+	* }
+	* /script>
+
+	
 
 
 
