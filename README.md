@@ -80,3 +80,18 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 * Use "style" over "width"/"height" - <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
 * To use images as a link, put <img> inside <a> tag
 * [Background Images](https://www.w3schools.com/html/html_images_background.asp)
+
+## [Classes](https://www.w3schools.com/html/html_classes.asp)
+* Use the "class" attribute to define equal styles for elements with the same class name
+* Apply with JavaScript to perform a function against all elements within a specific class
+* Example - <script> within <body>
+	<script>
+	function myFunction() {
+	  var x = document.getElementsByClassName("city");
+	  for (var i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	  }
+	}
+	</script>
+
+
