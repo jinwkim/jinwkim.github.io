@@ -73,8 +73,8 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
     * "target" to choose new window, same window, etc.
 * Button as a link - button onclick="document.location = 'default.asp'">HTML Tutorial/button>
 * Can "bookmark" parts of the page
-    * h2 id="C4">Chapter 4/h2>
-    * a href="#C4">Jump to Chapter 4/a>
+    * h2 id="C4">Chapter 4 /h2>
+    * a href="#C4">Jump to Chapter 4 /a>
 
 ## Images
 * Use "style" over "width"/"height" - img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
@@ -89,13 +89,12 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 	* function myFunction() {
 	*  var x = document.getElementsByClassName("city");
 	*  for (var i = 0; i  x.length; i++) {
-	*    x[i].style.display = "none";
-	*  }
-	* }
+	*    x[i].style.display = "none"; } }
 	* /script>
+* vs. ID
+	* Only one element can have one unique id
+	* You can bookmark to a link using href
 
-	
-
-
-
+## [Iframe](https://www.w3schools.com/html/html_iframe.asp)
+* Embed a web page within a web page
 
