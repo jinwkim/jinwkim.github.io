@@ -98,3 +98,21 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 ## [Iframe](https://www.w3schools.com/html/html_iframe.asp)
 * Embed a web page within a web page
 
+## [JavaScript](https://www.w3schools.com/html/html_scripts.asp)
+* Client-side script
+* i.e. document.getElementById()
+
+## [Head](https://www.w3schools.com/html/html_head.asp)
+* "head" is a container for metadata - data about data, not displayed
+* Use the following tags - title, style, meta, link, script, base
+* Sample meta
+	* meta charset="UTF-8">
+	* meta name="description" content="Free Web tutorials">
+	* meta name="keywords" content="HTML, CSS, XML, JavaScript">
+	* meta name="author" content="John Doe">
+	* meta http-equiv="refresh" content="30">
+* Setting the view
+	* meta name="viewport" content="width=device-width, initial-scale=1.0">
+* Set the base URL
+	* base href="https://www.w3schools.com/images/" target="_blank">
+
