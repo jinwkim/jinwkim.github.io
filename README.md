@@ -112,7 +112,7 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 	* meta name="author" content="John Doe">
 	* meta http-equiv="refresh" content="30">
 * Setting the view
-	* meta name="viewport" content="width=device-width, initial-scale=1.0">
+	* &#60;meta name="viewport" content="width=device-width, initial-scale=1.0">
 * Set the base URL
-	* base href="https://www.w3schools.com/images/" target="_blank">
+	* &#60;base href="https://www.w3schools.com/images/" target="_blank">
 
