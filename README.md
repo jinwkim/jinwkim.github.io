@@ -3,12 +3,12 @@
 
 Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.asp)
 ## HTML Attributes
-* HTML links using "a" tag - &#60;a href="https://www.w3schools.com">This is a link /a>
+* HTML links using "a" tag - &#60;a href="https://www.w3schools.com">This is a link &#60;/a>
 * Images using "src" attribute - &#60;img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
     * "alt" to show text when image cannot be displayed
-* style attribute (CSS) - &#60;p style="color:red">This is a red paragraph./p>
+* style attribute (CSS) - &#60;p style="color:red">This is a red paragraph.&#60;/p>
 * title attribute to show text when you hover over text
-    * &#60;p title="I'm a tooltip"> This is a paragraph /p>
+    * &#60;p title="I'm a tooltip"> This is a paragraph &#60;/p>
 
 ## Headings
 * Search engines use headings to index the structure and content of web pages
@@ -39,7 +39,7 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 * Can control layout of multiple web pages at once
 * Can be added in 3 ways:
     * inline - "style" attribute
-        - h1 style="color:blue;">This is a Blue/h1>
+        - h1 style="color:blue;">This is a Blue&#60;/h1>
     * internally - style> element in head>
         - &#60;style>
             body {background-color: powderblue;}
@@ -47,7 +47,7 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
             p    {color: red;}
         &#60;/style>
     * externally - CSS file
-        - head>link rel="stylesheet" href="styles.css">/head>
+        - &#60;head link rel="stylesheet" href="styles.css">&#60;/head>
         - Specify in styles.css, sample:
             body {
               background-color: powderblue;
@@ -60,10 +60,10 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
               color: red;
             }
 * Use "id" attribute to specify style for specific element
-    * &#60;p id="p01">I am different/p>
+    * &#60;p id="p01">I am different&#60;/p>
     * In CSS: #p01{color:blue;}
 * Use "class" attribute to specify a class
-    * &#60;p class="error">I am different/p>
+    * &#60;p class="error">I am different&#60;/p>
     * In CSS: p.error{color:red;}
 * Reference external style sheets: &#60;link rel="stylesheet" href="/html/styles.css">
 
@@ -71,10 +71,10 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 * Hyperlinks with a> tag
 * &#60;a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!/a>
     * "target" to choose new window, same window, etc.
-* Button as a link - button onclick="document.location = 'default.asp'">HTML Tutorial/button>
+* Button as a link - button onclick="document.location = 'default.asp'">HTML Tutorial&#60;/button>
 * Can "bookmark" parts of the page
-    * &#60;h2 id="C4">Chapter 4 /h2>
-    * &#60;a href="#C4">Jump to Chapter 4 /a>
+    * &#60;h2 id="C4">Chapter 4 &#60;/h2>
+    * &#60;a href="#C4">Jump to Chapter 4 &#60;/a>
 
 ## Images
 * Use "style" over "width"/"height" - &#60;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
