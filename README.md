@@ -116,3 +116,11 @@ Below are notes on HTML from [W3Schools](https://www.w3schools.com/html/default.
 * Set the base URL
 	* &#60;base href="https://www.w3schools.com/images/" target="_blank">
 
+## Layout & Responsive
+* Use frameworks like [Bootstrap](https://www.w3schools.com/bootstrap/default.asp) to create responsive layouts that adjust to different screen sizes
+
+
+Below are notes on Bootstrap 3 from [W3Schools](https://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
+##
+* 
+
