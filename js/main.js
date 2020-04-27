@@ -29,6 +29,7 @@ Menu
 
 	function init() {
 		initEvents();
+		toggleMenu(); // show menu at first
 	}
 
 	function initEvents() {
