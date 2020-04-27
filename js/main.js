@@ -29,7 +29,15 @@ Menu
 
 	function init() {
 		initEvents();
-		// toggleMenu(); // show menu at first
+		// If mobile, don't show menu
+		if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
+ 			|| navigator.userAgent.match(/iPhone/i)|| navigator.userAgent.match(/iPad/i)
+ 			|| navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i)
+ 			|| navigator.userAgent.match(/Windows Phone/i)){
+ 			
+ 		} else {
+ 			toggleMenu();
+ 		}
 	}
 
 	function initEvents() {
