@@ -65,6 +65,7 @@ Jin Kim's personal website is hosted on GitHub.
 * CSS
 * JavaScript
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Font-Awesome](https://fontawesome.com/v4.7/)
 
 
 <!-- GETTING STARTED -->
