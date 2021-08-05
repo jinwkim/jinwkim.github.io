@@ -1,4 +1,4 @@
-# Jin Kim - Personal Website
+# Jin Kim - Personal Website 
 
 <!-- PROJECT SHIELDS -->
 
