@@ -1,4 +1,4 @@
-# Jin Kim - Personal Website 'Dev Branch'
+# Jin Kim - Personal Website
 
 <!-- PROJECT SHIELDS -->
 
@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Jin Kim's personal website is hosted on GitHub.
+Jin Kim's personal website is hosted using GitHub Pages.
 
 
 ### Built With
