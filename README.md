@@ -64,9 +64,6 @@ Jin Kim's personal website is hosted using GitHub Pages.
 * HTML
 * CSS
 * JavaScript
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-* [Font-Awesome](https://fontawesome.com/v4.7/)
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -78,6 +75,8 @@ To create your own personal website, feel free to adapt my website as a template
 * HTML
 * CSS
 * JavaScript
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Font-Awesome](https://fontawesome.com/v4.7/)
 
 ### Installation
  
@@ -91,7 +90,7 @@ git clone https://github.com/jinwkim/jinwkim.github.io.git
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-You can publish your website on GitHub using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). Once your website is published, you can purchase a domain name and have it redirect.
+You can publish your website on GitHub using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). Once your website is published, you can purchase a domain name (i.e. [Google Domains](https://domains.google)) and have it redirect to your website.
 
 For example, you can reach my website through both (1) https://itsjinkim.com and (2) http://jinwkim.github.io
 
