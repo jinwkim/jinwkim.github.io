@@ -10,15 +10,11 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="style.css" /> 
 	<!-- script to provide gap between content and navbar -->
-	<script>
-		var shiftWindow = function() { scrollBy(0, -70) };
-		window.addEventListener("hashchange", shiftWindow);
-		function load() { if (window.location.hash) shiftWindow(); }
-	</script>
+	<script src="main.js"></script>
 	<!-- Title of Webpage -->
 	<title>Hi, I'm Jin</title>
 	<!-- Website Tab Icon -->
-	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 </head>
 
 <body class="d-flex flex-column vh-100" onload="load()">
@@ -60,11 +56,10 @@
 
 		<br>
 		<!-- Personal Photo -->
-		<img src="images/jinkim.png" class="rounded mx-auto d-block" alt="Photo of Jin Kim" width="400" height="400">
+		<img src="images/jinkim.png" class="rounded mx-auto d-block img-responsive" alt="Photo of Jin Kim" width="400" height="400">
 		<br>
 		<div class="row">
-			<div class="col-sm"></div>
-			<div class="col-sm"></div>
+			<div class="col-sm-3"></div>
 			<div class="col-sm">
 				<!-- GitHub -->
 				<a href="https://github.com/jinwkim" class="social-btn"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -77,8 +72,7 @@
 				<!-- Facebook -->
 				<a href="https://www.facebook.com/jinwookim95" class="social-btn"><i class="fa fa-facebook"></i></a></li>
 			</div>
-			<div class="col-sm"></div>
-			<div class="col-sm"></div>
+			<div class="col-sm-3"></div>
 		</div>
 		<br>
 		<a class="btn dark-bg" href="#contact">Get In Touch</a>
@@ -185,6 +179,8 @@
 		</div>
 		
 	</div>
+
+	<br>
 
 	<div class="container-fluid text-right">
 		<p>Created by <a href="https://www.linkedin.com/in/jinwoookim">Jin Kim</a></p>
