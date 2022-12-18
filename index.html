@@ -15,6 +15,8 @@
 	<script src="main.js"></script>
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML0DD8HX2L"></script>
+	<!-- Mixpanel -->
+	<script src="mixpanel.js"></script>
 	<!-- Website Tab Icon -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<!-- Title of Webpage -->
@@ -24,27 +26,26 @@
 <body class="d-flex flex-column vh-100" onload="load()">
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top dark-bg">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="#" onclick="mainLogo()">
 			<img src="images/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
 			Jin Kim
 		</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="navbar()">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#about">About</a>
-				<a class="nav-item nav-link" href="#experiences">Experiences</a>
-				<a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-				<a class="nav-item nav-link" href="#contact">Contact</a>
+				<a class="nav-item nav-link active" href="#" onclick="home()">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="#about" onclick="about()">About</a>
+				<a class="nav-item nav-link" href="#experiences" onclick="experiences()">Experiences</a>
+				<a class="nav-item nav-link" href="#portfolio" onclick="portfolio()">Portfolio</a>
+				<a class="nav-item nav-link" href="#contact" onclick="contact()">Contact</a>
 			</div>
 		</div>
 	</nav>
-
 
 	<!-- Home -->
 	<div class="container-fluid text-center section-padding px-4">
@@ -54,8 +55,9 @@
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col-sm">
-				<h5>Entrepreneur in Digital Health. MIT AI & Entrepreneurship. Former US Archery
-					Team.</h5>
+				<h5>Entrepreneur in Healthcare Tech. </h5>
+				<h5>Former US Archery Team. </h5>
+				<h5>MIT. </h5>
 			</div>
 			<div class="col-3"></div>
 		</div>
@@ -66,27 +68,26 @@
 			alt="Photo of Patient Making Decision" width="500" height="auto">
 		<br>
 		<div class="row">
-			<div class="col-sm-3"></div>
+			<div class="col-md-4"></div>
 			<div class="col-sm">
 				<!-- GitHub -->
-				<a href="https://github.com/jinwkim" class="social-btn"><i class="fa fa-github"
+				<a href="https://github.com/jinwkim" class="social-btn" onclick="github()"><i class="fa fa-github"
 						aria-hidden="true"></i></a>
 			</div>
-			<div id="col-sm-1"></div>
+			<!-- <div id="col-sm-1"></div> -->
 			<div class="col-sm">
 				<!-- LinkedIn -->
-				<a href="https://www.linkedin.com/in/jinwoookim" class="social-btn"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.linkedin.com/in/jinwoookim" class="social-btn" onclick="linkedin()"><i class="fa fa-linkedin"></i></a>
 			</div>
-			<div id="col-sm-1"></div>
-			<div class="col-sm">
+			<!-- <div class="col-sm"> -->
 				<!-- Facebook -->
-				<a href="https://www.facebook.com/jinwookim95" class="social-btn"><i class="fa fa-facebook"></i></a>
-				</li>
-			</div>
-			<div class="col-sm-3"></div>
+				<!-- <a href="https://www.facebook.com/jinwkim18" class="social-btn"><i class="fa fa-facebook"></i></a> -->
+				<!-- </li> -->
+			<!-- </div> -->
+			<div class="col-md-4"></div>
 		</div>
 		<br>
-		<a class="btn dark-bg" href="#contact">Get In Touch</a>
+		<a class="btn dark-bg" href="#contact" id="getInTouch" onclick="contact()">Get In Touch</a>
 	</div>
 	</div>
 
@@ -98,30 +99,30 @@
 				<h3 id="about">About Me</h3>
 				<br>
 				<p>
-					I have always had a keen interest in healthcare. Growing up, I had my eyes set on medical school.
-					However, once I came to MIT, I realized I was at a unique intersection between healthcare and technology.
+					I am the founder of a healthcare tech startup using AI to optimize clinical trials.
 				</p>
 				<p>
-					After MIT, I knew I had to be out in the field and talk with customers to figure out what's the
-					current landscape of digital health. I started off as a Sales Engineer at InterSystems, the technology powering Epic,
-					that put me at the forefront of healthcare and technology. Most importantly, on a daily basis, I was talking with
-					physicians and enterprise IT teams at some of the largest and innovative healthcare organizations in the
-					United States, like Ascension Health, Intermountain, Northwell, and Cedars-Sinai. I solved 
-					challenging problems around healthcare data integration and interoperability (i.e. HL7, CDA, X12, FHIR), enabling
-					data consolidation from different systems across hospitals (i.e. Epic/Cerner, labs, claims, SDOH)
-					and extracting actionable insights to improve care. 
+					I have always had a keen interest in medicine growing up. I was a pre-med during my undergrad years at MIT,
+					but given my passion for technology, I also studied Computer Science. Once I realized I was at a unique 
+					intersection between healthcare and technology, I wanted to help revolutionize healthcare with cutting-edge
+					technology.
 				</p>
 				<p>
-					Over the years, I saw precious healthcare data siloed at hospitals across different vendor software
-					and the misaligned incentives that prevent effective utilization of patient data to improve care.
-					Earlier this year, I returned to MIT in pursuit of entrepreneurship in healthcare to find an optimal
-					way to help improve care using data, including exploring new enabling technologies like Web3.
+					I am all about listening to the customer and seeing what's really going out in the real world. To gain those insights,
+					I started off as a Sales Engineer in Healthcare at InterSystems, the platform that powers Epic electronic health record systems.
+					I worked closely with engineers and executives at health systems, payers, and pharma to leverage patient data from data siloes to 
+					extract insights that can help improve care. After several years, I became a Product Manager leading the healthcare analytics team.
 				</p>
 				<p>
-					I like to stay active, whether it be running a 5K, attending conferences, and trying
-					out new eateries to share on my food blog <a
-						href="https://www.instagram.com/eatlikeabos/">@EatLikeABOS</a>. I am also a huge basketball fan,
-					always on the lookout for the next Woj bomb in the NBA.
+					To innovate more rapidly and get closer to customer problems, I decided to start my own company. Coming back to MIT for grad school
+					was a great opportunity to take advantage of entrepreneurship resources at MIT, ranging from Sloan, Martin Trust Center, iHQ, and even
+					Harvard Innovation Labs.
+				</p>
+				<p>
+					I like to stay active in various dimensions of life, whether it be reading, lifting weights, traveling to new places, 
+					and uncovering new eateries to share on my food blog <a
+						href="https://www.instagram.com/eatlikeabos/" onclick="foodblog()">@EatLikeABOS</a>. I am also a huge basketball fan,
+					always on the lookout for the next Woj bomb in the NBA. Go Clippers! (yes, I know...)
 				</p>
 			</div>
 			<div class="col-1"></div>
@@ -139,9 +140,9 @@
 				<div class="icon">
 					<i class="fa fa-suitcase" aria-hidden="true""></i><!-- Icon -->
 				</div>
-				<h2><a href='https://www.intersystems.com/'>InterSystems</a></h2><!-- Title -->
-				<p>I spent the first 3 years as a Sales Engineer and most recently was the Product Manager of the 
-					Healthcare Analytics team. I was focused on the analytics end user personas at health organizations, 
+				<h2><a href='https://www.intersystems.com/' onclick="intersystems()">InterSystems</a></h2><!-- Title -->
+				<p>I started my career as a Sales Engineer and most recently was the Product Manager of the 
+					Healthcare Analytics team. I was focused on the analytics end user personas at health systems, 
 					not only solving data integration and interoperability challenges, but also extracting 
 					actionable insights to improve care for patients. </p>
 			</div>
@@ -150,24 +151,24 @@
 						<div class="icon">
 							<i class="fa fa fa-university" aria-hidden="true"></i><!-- Icon -->
 						</div>
-						<h2><a href="https://news.mit.edu/2014/mit-class-of-2018-0903">Massachusetts Institute of
+						<h2><a href="https://news.mit.edu/2014/mit-class-of-2018-0903" onclick="mit()">Massachusetts Institute of
 								Technology</a></h2><!-- Title -->
-						<p> I majored in Electrical Engineering and Computer Science (Course 6), minored in Biology
-							(Course 7), completed the Pre-Med track, and fulfilled the Political Science humanities
-							concentration. I served as the President of Korean Students Association (KSA),
-							competed with the Archery Club, and volunteered with Camp Kesem at MIT.</p>
+						<p> I completed the Master of Engineering program focused on AI. As an undergrad, I studied Electrical Engineering and 
+							Computer Science (Course 6) and minored in Biology (Course 7). 
+							I served as the President of Korean Students Association (KSA),
+							competed nationally with the MIT Archery Club, and volunteered with Camp Kesem at MIT.</p>
 				</div>
 				<!-- Archery -->
 				<div class="col-md-4 wp2 item delay-05s">
 					<div class="icon">
 						<i class="fa fa-bullseye"></i><!-- Icon -->
 					</div>
-					<h2> <a href='https://www.usarchery.org/high-performance/united-states-archery-team'>United States
+					<h2> <a href='https://www.usarchery.org/high-performance/united-states-archery-team' onclick="archery()">United States
 							Archery Team</a></h2><!-- Title -->
 					<p>I picked up a bow and arrows in 2010 and was fortunate to train under USA National Head Coach
 						Kisik Lee. I shoot an Olympic-style recurve, and I competed nationally and internationally over
 						the years, making a team medal match appearance at the 2014 International Archery Festa. I
-						earned selections to the 2014 Junior US Archery Team</a> and USA Junior Dream Team.</p>
+						earned selections to the 2014 US Archery Team</a> and USA Junior Dream Team.</p>
 					<!-- Description -->
 				</div>
 			</div>
@@ -181,13 +182,14 @@
 				<div class="col-4"></div>
 				<div class="col-sm">
 					<ul>
-						<li> <a href="https://github.com/jinwkim/instagram-automation">Instagram Engagement Automation
+						<li> <a href="https://github.com/jinwkim/emotion-detection" onclick="emotionDetection()">Emotion Detection in Telehealth Using Face and Speech Emotion Detectors</a> </li>
+						<li> <a href="https://github.com/jinwkim/instagram-automation" onclick="instagramAutomation()">Instagram Engagement Automation
 								Tool Using Python</a> </li>
-						<li> <a href="https://github.com/jinwkim/alexa-restaurant-finder">Alexa Skill - Restaurant
-								Finder via Yelp API</a> </li>
-						<li> <a href="https://github.com/jinwkim/matching-card-game">iOS App - Card Matching Game</a>
+						<li> <a href="https://github.com/jinwkim/alexa-restaurant-finder" onclick="alexaRestaurant()">Alexa Skill - Restaurant
+								Finder</a> </li>
+						<li> <a href="https://github.com/jinwkim/matching-card-game" onclick="cardGame()">iOS App - Card Matching Game</a>
 						</li>
-						<li> <a href="https://github.com/jinwkim/jinwkim.github.io">This website you are currently
+						<li> <a href="https://github.com/jinwkim/jinwkim.github.io" onclick="personalWebsite()">This website you are currently
 								on!</a> </li>
 					</ul>
 				</div>
@@ -198,28 +200,26 @@
 		<!-- Contact -->
 		<div class="container-fluid text-center section-padding px-4">
 			<h3 id="contact">Let's Get In Touch</h3>
-			<p>Drop me a line on Facebook or LinkedIn</p>
+			<p>Drop me a line on LinkedIn</p>
 			<br>
 			<div class="row">
-				<div class="col-sm"></div>
-				<div class="col-sm"></div>
+				<div class="col-md-4"></div>
 				<div class="col-sm">
 					<!-- GitHub -->
-					<a href="https://github.com/jinwkim" class="social-btn"><i class="fa fa-github"
+					<a href="https://github.com/jinwkim" class="social-btn" onclick="github()"><i class="fa fa-github"
 							aria-hidden="true"></i></a>
 				</div>
 				<div class="col-sm">
 					<!-- LinkedIn -->
-					<a href="https://www.linkedin.com/in/jinwoookim" class="social-btn"><i
+					<a href="https://www.linkedin.com/in/jinwoookim" class="social-btn" onclick="linkedin()"><i
 							class="fa fa-linkedin"></i></a>
 				</div>
-				<div class="col-sm">
+				<!-- <div class="col-sm"> -->
 					<!-- Facebook -->
-					<a href="https://www.facebook.com/jinwookim95" class="social-btn"><i class="fa fa-facebook"></i></a>
-					</li>
-				</div>
-				<div class="col-sm"></div>
-				<div class="col-sm"></div>
+					<!-- <a href="https://www.facebook.com/jinwkim18" class="social-btn"><i class="fa fa-facebook"></i></a> -->
+					<!-- </li> -->
+				<!-- </div> -->
+				<div class="col-md-4"></div>
 			</div>
 
 		</div>
