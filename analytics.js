@@ -108,3 +108,9 @@ function linkedin() {
     jitsu('track', 'LinkedIn');
     console.log("LinkedIn");
 }
+
+function miracleContactForm() {
+    mixpanel.track("miracleContactForm");
+    jitsu('track', 'miracleContactForm');
+    console.log("miracleContactForm");
+}
